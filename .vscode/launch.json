@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "PowerShell Launch Current File With Args",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${file}",
+            "args": ["-Word _A_SE -GreenPositions 2,4,5  -GreyLetters R,O,F,H,L,C -Verbose"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "PowerShell: Launch Script",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "enter path or command to execute e.g.: ${workspaceFolder}/src/foo.ps1 or Invoke-Pester",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
