@@ -1,3 +1,22 @@
+<#
+.SYNOPSIS
+    Finds all possible wordle words for a given situation.
+.DESCRIPTION
+    Finds all possible wordle words for a given situation.
+.PARAMETER Word
+    Your current wordle setup. Enter missing characters as '_', and known letters as themselves 'a' (without quotes).
+.PARAMETER YellowLetters
+    A comma separated list of letters that are yellow.
+.PARAMETER GreyLetters
+    A comma separated list of letters that are grey.
+.EXAMPLE
+    Get-Wordle -Word _A_SE -YellowLetters p -GreyLetters z,c,x
+    Word is known to have A in the 3rd position, and S and E in the 4th and 5th position. P is known to be somewhere, and z, c, and x are not
+    in the word at all.
+.NOTES
+    Generates AcceptedWords.txt next to the script. This is downloaded from Wordle's website
+#>
+
 [CmdletBinding()]
 param (
     [Parameter(Position = 0)]
