@@ -9,7 +9,8 @@
             "type": "PowerShell",
             "request": "launch",
             "script": "${file}",
-            "args": ["-Word _A_SE -GreenPositions 2,4,5  -GreyLetters R,O,F,H,L,C -Verbose"],
+            //"args": ["-Word _____ -YellowSetup RUM__ -GreyLetters l,c,e,b,a -Verbose"],
+            "args": ["-Word ___E_ -YellowSetup CRU_L -GreyLetters a,o,s,t,i,d -Verbose"],
             "cwd": "${workspaceFolder}"
         },
         {
